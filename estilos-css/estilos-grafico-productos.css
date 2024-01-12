@@ -1,0 +1,314 @@
+.container-grafico-prod{
+    width: 95%;
+    height: 95%;
+    background-color: rgba(167, 167, 167, 0.671);
+    margin-top: 1.5%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 90% 10%;
+}
+
+.container-grafico-prod button{
+    width: 120px;
+    height: 30px;
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: end;
+    margin-right: 20px;
+    align-self: start;
+    border-radius: 15px;
+    color: #fff;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,0,0,0) 100%);
+
+}
+
+.container-grafico-prod .container-grafico{
+    width: 90%;
+    height: 90%;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    outline: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(6,16%);
+    grid-template-rows: repeat(6,16%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container-grafico-prod .container-grafico .linea-numeros{
+    width: 0;
+    height: 98%;
+    grid-column: 6;
+    grid-row: 1 / 7;
+    border-left: 1.5px solid #000;
+}
+
+.container-grafico-prod .container-grafico .linea-prod-nombres{
+    width: 98%;
+    height: 0;
+    grid-column: 1 / 7;
+    grid-row: 6;
+    border-bottom: 1.5px solid #000;
+    margin-bottom: 10%;
+}
+
+.container-grafico-prod .container-numeros{
+    width: 100%;
+    height: 100%;
+    grid-column: 6;
+    grid-row: 1 / 6;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5,20%);
+}
+
+.container-grafico-prod .container-numeros .numeros-1{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+}
+
+.container-grafico-prod .container-numeros .numeros-2{
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+}
+
+.container-grafico-prod .container-numeros .numeros-3{
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+}
+
+.container-grafico-prod .container-numeros .numeros-4{
+    grid-column: 1;
+    grid-row: 4;
+    align-self: center;
+}
+
+.container-grafico-prod .container-numeros .numeros-5{
+    grid-column: 1;
+    grid-row: 5;
+    align-self: center;
+}
+
+.container-grafico-prod .container-prod-nombres{
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 6;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: 100%;
+}
+
+.container-grafico-prod .container-prod-nombres .prod-nombre-1{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+}
+
+.container-grafico-prod .container-prod-nombres .prod-nombre-2{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+.container-grafico-prod .container-prod-nombres .prod-nombre-3{
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+}
+
+.container-grafico-prod .container-prod-nombres .prod-nombre-4{
+    grid-column: 4;
+    grid-row: 1;
+    align-self: center;
+}
+
+.container-grafico-prod .container-prod-nombres .prod-nombre-5{
+    grid-column: 5;
+    grid-row: 1;
+    align-self: center;
+}
+
+.container-grafico-prod .container-grafico .container-barras{
+    display: grid;
+    width: 95%;
+    height: 95%;
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(5, 20%);
+    justify-content: center;
+    align-items: center;
+}
+
+.container-grafico-prod .container-grafico .container-barras .barra-1{
+    grid-column: 1;
+    grid-row: 1 / 6;
+    width: 40px;
+    /* height: 90%; */
+    justify-self: center;
+    align-self: end;
+    background-color: blue;
+    transition: height 2s;
+    animation: crecer 2s;
+}
+
+.container-grafico-prod .container-grafico .container-barras .barra-1:hover ~ .mostar-num-barra-1{
+    transform: scale(1);
+}
+
+.container-grafico-prod .container-grafico .container-barras .mostar-num-barra-1{
+    grid-column: 1;
+    grid-row: 5;
+    width: 30px;
+    border-radius: 5px;
+    /* height : 20px; */
+    justify-self: start;
+    align-self: end;
+    background-color: black; 
+    color: #fff;
+    transform: scale(0);
+    transition: transform .2s ease-in;
+}
+
+.container-grafico-prod .container-grafico .container-barras .barra-2{
+    grid-column: 2;
+    grid-row: 1 / 6;
+    width: 40px;
+    height: 90%;
+    justify-self: center;
+    align-self: end;
+    background-color: red;
+    animation: crecer 2s;
+}
+
+.container-grafico-prod .container-grafico .container-barras .mostar-num-barra-2{
+    grid-column: 2;
+    grid-row: 5;
+    width: 30px;
+    border-radius: 5px;
+    height : 20px;
+    justify-self: start;
+    align-self: end;
+    background-color: black; 
+    color: #fff;
+    transform: scale(0);
+    transition: transform .2s ease-in;
+}
+
+.container-grafico-prod .container-grafico .container-barras .barra-2:hover ~ .mostar-num-barra-2{
+    transform: scale(1);
+}
+
+.container-grafico-prod .container-grafico .container-barras .barra-3{
+    grid-column: 3;
+    grid-row: 1 / 6;
+    width: 40px;
+    height: 0;
+    justify-self: center;
+    align-self: end;
+    background-color: green;
+    transition: height 2s;
+    animation: crecer 2s;
+}
+
+.container-grafico-prod .container-grafico .container-barras .mostar-num-barra-3{
+    grid-column: 3;
+    grid-row: 5;
+    width: 30px;
+    border-radius: 5px;
+    height : 20px;
+    justify-self: start;
+    align-self: end;
+    background-color: black; 
+    color: #fff;
+    transform: scale(0);
+    transition: transform .2s ease-in;
+}
+
+.container-grafico-prod .container-grafico .container-barras .barra-3:hover ~ .mostar-num-barra-3{
+    transform: scale(1);
+}
+
+.container-grafico-prod .container-grafico .container-barras .barra-4{
+    grid-column: 4;
+    grid-row: 1 / 6;
+    width: 40px;
+    height: 0;
+    justify-self: center;
+    align-self: end;
+    background-color: orange;
+    transition: height 2s;
+    animation: crecer 2s;
+}
+
+.container-grafico-prod .container-grafico .container-barras .mostar-num-barra-4{
+    grid-column: 4;
+    grid-row: 5;
+    width: 30px;
+    border-radius: 5px;
+    height : 20px;
+    justify-self: start;
+    align-self: end;
+    background-color: black; 
+    color: #fff;
+    transform: scale(0);
+    transition: transform .2s ease-in;
+}
+
+.container-grafico-prod .container-grafico .container-barras .barra-4:hover ~ .mostar-num-barra-4{
+    transform: scale(1);
+}
+
+.container-grafico-prod .container-grafico .container-barras .barra-5{
+    grid-column: 5;
+    grid-row: 1 / 6;
+    width: 40px;
+    height: 0;
+    justify-self: center;
+    align-self: end;
+    background-color: violet;
+    transition: height 2s ease-in-out;
+    animation: crecer 2s;
+}
+
+.container-grafico-prod .container-grafico .container-barras .mostar-num-barra-5{
+    grid-column: 5;
+    grid-row: 5;
+    width: 30px;
+    border-radius: 5px;
+    height : 20px;
+    justify-self: start;
+    align-self: end;
+    background-color: black; 
+    color: #fff;
+    transform: scale(0);
+    transition: transform .2s ease-in;
+}
+
+.container-grafico-prod .container-grafico .container-barras .barra-5:hover ~ .mostar-num-barra-5{
+    transform: scale(1);
+}
+
+@keyframes crecer {
+    0%{
+        height: 0;
+    }
+    80%{
+        height: 100%;
+    }
+    90%{
+        height: 75%;
+    }
+}
+
+

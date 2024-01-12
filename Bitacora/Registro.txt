@@ -1,0 +1,71 @@
+Inicio del desarrllo de la APP supermercado
+Desarrollo del HTML y CSS
+01/09/22
+
+Implematecion y desarrollo de nueva propuesta de interfaz usuario 
+02/09/22  22:07
+
+Desarrollo de los objetos "Producto" y "supermercado"
+03/09/22   15:20
+
+Desarrollo del metodo Ingresar producto en la la clase supermercado 
+Creacion de documento Funciones-metodos-supermercado.js para la estructurazion de las funciones del programa
+05/09/22   23:22
+
+Desarrollo de el metodo "Ingresar nuevo porducto" funcional
+06/09/22   13:21
+
+funcionamiento exitoso del metodo IngresarProducto
+Desarrollo del metodo eliminarPorCodigo()
+07/09/22   00:50
+
+fucionamiento del metodo eliminarPorCodigo() 
+Desarrollo del metodo obtenerProducMayorValor()
+Desarrollo de la funcion productosDefault();
+07/09/22   14:54
+
+Funcionamineto de la funcion ProductosDefault() con exito 
+Desarrollo y funconamiento exitoso del metodo obtenerProducConMayorExistencia()  
+Desarrollo del metodo ordenarProductoPorCodigo()
+07/09/22   21:12
+
+Desarrollo del metodo imprimirTodosLosProductos(), funcionamiento exitoso
+Desarrollo del metodo cantDeProductosBajosDeExistencia(), funcionamiento exitoso
+Desarrollo del metodo imprimirProductosBajosDeExistencia(), funcionamiento exitoso
+Desarrollo del metodo cuantosKgsSeHanVendidoEnGeneral(), funcionamiento exitoso
+Desarrollo del metodo cuantosKgsSeHanVendidoDelProducto(), funcionamiento exitoso
+Desarrollo del metodo imprimProductosQueSonMasCostososQue(), funcionamiento exitoso
+Restructurazion de documentos ocn funciones de motodos del obejto supermercado, de varios documentos a solo dos que alemacenan las funiones. 
+-Existen subdiviones dentro de los documentos para su organizacion interna
+08/09/22   19:35
+
+Revision de los metodos asignados a cada funcion en "Funciones-metodos-supermercado.js"
+09/09/22  18:55
+
+Desarrollo del metodo cuantasUnidadesSeHanVendidoDelProducto(), funcionamiento exito
+Desarrollo del metodo costoDelInventario(), funcionamiento exito
+Desarrollo del metodo costoDeLasVentas(), funcionamiento exito
+Desarrollo del metodo valorDeLasVentas(), funcionamiento exito
+Desarrollo del metodo ganaciaDelSuperMercadoPorVentas(), funcionamiento exito
+Inicio del desarrollo del metodo graficoDeVentasDeLos5ProductsMasVendidos()
+Desarrollo de nuevos metodos
+09/09/22   22:46
+
+Desarrollo del metodo graficoDeVentasDeLos5ProductsMasVendidos(), pendientes
+11/09/22   22:45
+
+Desarrollo del metodo graficoDeVentasDeLos5ProductsMasVendidos(), funcionamiento 95%
+12/09/22   13:59
+
+Desarrollo del metodo graficoDeVentasDeLos5ProductsMasVendidos(), funcionamiento exitoso
+Desarrollo del metodo graficoDeVentasDeLos5ProductsMenosVendidos(), funcionamiento exitoso
+desarrllo del metodo promedioDeLosPreciosDeVenta(),  funcionamiento exitoso
+Desarrollo de la funcion estilosGrafico(), estado de prueba
+LA APP SE PUEDE CONSIDERAR LISTA
+12/09/22   23:03
+
+Integracion de alerta en dispositivos moviles
+13/09/22   09:31
+
+PENDIENTES: 
+DESARROLLO COMPLETO

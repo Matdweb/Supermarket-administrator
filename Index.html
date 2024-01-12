@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos-css/estilos-pagina-principal.css">
+    <link rel="stylesheet" href="estilos-css/estilos-forms-nuevo-producto.css">
+    <link rel="stylesheet" href="estilos-css/estilos-eliminarXcodigo.css">
+    <link rel="stylesheet" href="estilos-css/estilos-imprimir-productos.css">
+    <link rel="stylesheet" href="estilos-css/estilos-grafico-productos.css">
+    <title>Supermercado - Mat_dweb</title>
+</head>
+<body>
+    <section class="container-body">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#f3f4f5" fill-opacity="1" 
+            d="M0,160L60,170.7C120,181,240,203,360,186.7C480,171,600,117,720,117.3C840,117,960,171,1080,197.3C1200,224,1320,224,1380,224L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">   
+            </path>
+        </svg>
+        <section class="container">
+            <div class="linea-divisora"></div>
+            <div class="contenedor-menu-funcion">
+                <div class="opciones-container">
+                    <div class="menu">
+                        <label for="BTN-opciones">OPCIONES</label>
+                        <input type="checkbox" id="BTN-opciones">
+                        <div class="opciones">
+                            <h1 class="opcion" onclick="supermercado.IngresarProducto(); ">1. Ingresar nuevo producto</h1>
+                            <h1 class="opcion" onclick="supermercado.eliminarProductoPorCodigo()">2. Eliminar producto por codigo</h1>
+                            <h1 class="opcion" onclick="supermercado.obtenerProducMayorValor()">3. Obtener producto de mayor valor</h1>
+                            <h1 class="opcion" onclick="supermercado.obtenerProducConMayorExistencia()">4. Obtener producto con mayor existencia</h1>
+                            <h1 class="opcion" onclick="supermercado.ordenarProductPorCodigo()">5. Ordenar los productos por codigo</h1>
+                            <h1 class="opcion" onclick="supermercado.imprimirTodosLosProductos()">6. Imprimir todos los productos</h1>
+                            <h1 class="opcion" onclick="supermercado.cantDeProductosBajosDeExistencia()">7. Cantidad de prodcutos de baja existencia</h1>
+                            <h1 class="opcion" onclick="supermercado.imprimirProductosBajosDeExistencia()">8. Cuadro de productos bajos de exitenci</h1>
+                            <h1 class="opcion" onclick="supermercado.cuantosKgsSeHanVendidoEnGeneral()">9. Cuantos kgs se han vendido en total</h1>
+                            <h1 class="opcion" onclick="supermercado.cuantosKgsSeHanVendidoDelProducto()">10. Cuantos kgs se han vendido de un producto</h1>
+                            <h1 class="opcion" onclick="supermercado.imprimProductosQueSonMasCostososQue()">11. Productos mas costos que</h1>
+                            <h1 class="opcion" onclick="supermercado.cuantasUnidadesSeHanVendidoDelProducto()">12. Cuantas unidades se han vendido de cierto producto</h1>
+                            <h1 class="opcion" onclick="supermercado.costoDelInventario()">13. Costo total del inventario</h1>
+                            <h1 class="opcion" onclick="supermercado.costoDeLasVentas()">14. Costo de las ventas</h1>
+                            <h1 class="opcion" onclick="supermercado.valorDeLasVentas()">15. Valor de las ventas</h1>
+                            <h1 class="opcion" onclick="supermercado.ganaciaDelSuperMercadoPorVentas()">16. Ganancia del supermercado por ventas</h1>
+                            <h1 class="opcion" onclick="supermercado.graficoDeVentasDeLos5ProductsMasVendidos()">17. Grafico de los 5 productos mas vendidos</h1>
+                            <h1 class="opcion" onclick="supermercado.graficoDeVentasDeLos5ProductsMenosVendidos()">18. Grafico de los 5 productos menos vendidos</h1>
+                            <h1 class="opcion" onclick="supermercado.promedioDeLosPreciosDeVenta()">19. Promedio de los precios de venta</h1>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container-funciones">
+                    <div class="funciones">BIENVENIDO AL SUPER MERCADO DE <br> Mat_dweb</div>
+                    <!-- <div class="container-grafico-prod">
+                        <div class="container-grafico">
+                            <div class="container-barras">
+                                <div class="barra-1"></div>
+                                <div class="mostar-num-barra-1"></div>
+                                <div class="barra-2"></div>
+                                <div class="mostar-num-barra-2"></div>
+                                <div class="barra-3"></div>
+                                <div class="mostar-num-barra-3"></div>
+                                <div class="barra-4"></div>
+                                <div class="mostar-num-barra-4"></div>
+                                <div class="barra-5"></div>
+                                <div class="mostar-num-barra-5"></div>
+                            </div>
+                            <div class="linea-numeros"></div>
+                            <div class="container-numeros">
+                                <div class="numeros-1">100</div>
+                                <div class="numeros-2">100</div>
+                                <div class="numeros-3">100</div>
+                                <div class="numeros-4">100</div>
+                                <div class="numeros-5">100</div>
+                            </div>
+                            <div class="linea-prod-nombres"></div>
+                            <div class="container-prod-nombres">
+                                <div class="prod-nombre-1">producto</div>
+                                <div class="prod-nombre-2">producto</div>
+                                <div class="prod-nombre-3">producto</div>
+                                <div class="prod-nombre-4">producto</div>
+                                <div class="prod-nombre-5">producto</div>
+                            </div>
+                        </div>
+                        <button>LISTO</button>
+                    </div> -->
+                </div>
+            </div>
+    
+        </section>
+    </section>
+    <script src="JavaScript/Funciones-metodo-ingresar-producto.js"></script>
+    <script src="JavaScript/Funciones-metodos-supermercado.js"></script>
+    <script src="JavaScript/Objeto-Producto.js"></script>
+    <script src="JavaScript/Objeto-Supermercado.js"></script>
+    <script src="JavaScript/boton-opciones.js"></script>
+</body>
+</html>
+
+<!-- <div class="container-forms-nuevo-producto">
+    <h3>NUEVO PRODUCTO: Ingresar</h3>
+    <form>
+        <p>Nombre del nuevo producto:</p>
+        <input class="nombre"  type="text">
+        <p>Codigo:</p>
+        <input class="codigo"  type="text">
+        <p>Precio Base:</p>
+        <input class="precio"  type="number">
+        <p>Porcentaje de Ganancia:</p>
+        <input class="ganancia"  type="number">
+        <p>Cantidad Vendida:</p>
+        <input class="cant-vendida"  type="number">
+        <p>Existencia:</p>
+        <input class="existencia"  type="number">
+        <p>Peso unitario:</p>
+        <input class="peso"  type="number"><label>  KG</label>
+        <p>Existencia Minima:</p>
+        <input class="existencia-min"  type="number">
+    </form>
+    <button class="btn-registrar">REGISTRAR</button>
+</div> -->
